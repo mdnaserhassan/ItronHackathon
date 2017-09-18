@@ -19,7 +19,7 @@ using ItronXchangeServices.Results;
 
 namespace ItronXchangeServices.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
     {

@@ -28,8 +28,8 @@ namespace ItronXchangeServices
             _sessionFactory = Fluently.Configure()
                 .Database(MsSqlConfiguration.MsSql2008
                   .ConnectionString(
-                  @"Server=BAN-L170343\SQL2014;initial catalog=ItronXchange;
-		Integrated Security=SSPI;") // Modify your ConnectionString
+                  @"Server=itronxchangedbserver.database.windows.net;initial catalog=ItronXchange;
+		User ID=ItronXchange;Password=1tronIap!") // Modify your ConnectionString
                             //  .ShowSql()
                 )
                 .Mappings(m =>
